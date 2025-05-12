@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Event Handling Section -->
+        <section class="event-section">
+            <h2>Event Handling</h2>
+            <div class="event-buttons">
+                <button id="clickButton" class="btn">Click Me!</button>
+                <button id="hoverButton" class="btn">Hover Over Me!</button>
+                <button id="secretButton" class="btn">Try Double Clicking Me!</button>
+            </div>
+            <div class="keypress-area">
+                <p>Press any key to see it here: <span id="keyDisplay"></span></p>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="interactive-section">
+            <h2>Interactive Elements</h2>
+            <div class="color-changer">
+                <button id="colorButton" class="btn">Change My Color!</button>
+            </div>
+            
+            <div class="gallery">
+                <h3>Image Gallery</h3>
+                <div class="gallery-container">
+                    <img src="https://picsum.photos/300/200?random=1" alt="Gallery Image 1" class="gallery-img">
+                    <img src="https://picsum.photos/300/200?random=2" alt="Gallery Image 2" class="gallery-img">
+                    <img src="https://picsum.photos/300/200?random=3" alt="Gallery Image 3" class="gallery-img">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prevBtn" class="btn">Previous</button>
+                    <button id="nextBtn" class="btn">Next</button>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">
+                        <h3>Tab 1 Content</h3>
+                        <p>This is the content for tab 1.</p>
+                    </div>
+                    <div id="tab2" class="tab-pane">
+                        <h3>Tab 2 Content</h3>
+                        <p>This is the content for tab 2.</p>
+                    </div>
+                    <div id="tab3" class="tab-pane">
+                        <h3>Tab 3 Content</h3>
+                        <p>This is the content for tab 3.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="form-section">
+            <h2>Form Validation</h2>
+            <form id="validationForm">
+                <div class="form-group">
+                    <label for="name">Name (Required)</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (Min 8 characters)</label>
+                    <input type="password" id="password" name="password">
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
